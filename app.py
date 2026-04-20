@@ -12,7 +12,7 @@ def calculate_time(initial_wb, final_wb, temp):
     K = 0.2098 if temp < 45 else 0.043
 
     try:
-        t = (1 / K) * math.log((Ms - Mi) / (Ms - Mf))
+        t = (1 / K) * math.ln((Ms - Mi) / (Ms - Mf))
     except:
         t = 0
 
